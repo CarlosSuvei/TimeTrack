@@ -1,0 +1,73 @@
+/* Estilos adicionales */
+:root {
+  --color-espera: lightsalmon;
+  --color-progreso: lightblue;
+  --color-finalizado: lightgreen;
+
+  --success: #22c55e;
+  --error: #ef4444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* Estados:
+  - En espera
+  - En progreso
+  - Finalizado
+*/
+.estado {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  outline: 2px;
+  color: black;
+}
+
+.estado.espera {
+  background-color: var(--color-espera);
+}
+.estado.progreso {
+  background-color: var(--color-progreso);
+}
+.estado.finalizado {
+  background-color: var(--color-finalizado);
+}
+
+/* Estilos párrafos */
+p.success {
+  color: var(--success);
+}
+p.error {
+  color: var(--error);
+}
+
+/* FLEX */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* GAP */
+.gap {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 1rem;
+}

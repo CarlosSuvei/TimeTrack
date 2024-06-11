@@ -1,0 +1,2 @@
+# Custom 404 Page
+ErrorDocument 404 /TimeTrack-New/404.php
